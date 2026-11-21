@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Weekly GTA 6 guides, Leonida map breakdowns, character deep-dives, secrets, and gaming gear recommendations." />
+  <title>Vice City Insider — Weekly GTA 6 Guides &amp; Secrets</title>
+  <style>
+    :root {
+      --bg-primary: #0b0d14;
+      --bg-secondary: #131724;
+      --bg-card: #181d2e;
+      --text-primary: #f4f6fb;
+      --text-secondary: #a6b0c3;
+      --accent-pink: #ff2a85;
+      --accent-cyan: #00e5ff;
+      --border-color: rgba(255, 255, 255, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Header & Navigation */
+    header {
+      background-color: rgba(11, 13, 20, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      background: linear-gradient(90deg, var(--accent-pink), var(--accent-cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.25rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    nav a:hover {
+      color: var(--accent-cyan);
+    }
+
+    /* Hero Section */
+    .hero {
+      max-width: 1100px;
+      margin: 2rem auto 1rem;
+      padding: 2.5rem 1.5rem;
+      background: linear-gradient(135deg, rgba(255, 42, 133, 0.14), rgba(0, 229, 255, 0.1));
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 0.3rem 0.85rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent-cyan);
+      background: rgba(0, 229, 255, 0.12);
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.75rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 1.5rem;
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(90deg, var(--accent-pink), #d81b60);
+      color: #fff;
+      font-weight: 700;
+      border-radius: 8px;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      opacity: 0.95;
+    }
+
+    /* Main Content & Articles Grid */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.75rem;
+    }
+
+    .section-header h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0, 229, 255, 0.4);
+    }
+
+    .card-banner {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .banner-1 {
+      background: linear-gradient(135deg, #ff2a85, #5b247a);
+    }
+
+    .banner-2 {
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+    }
+
+    .banner-3 {
+      background: linear-gradient(135deg, #f7971e, #ffd200);
+      color: #111;
+    }
+
+    .card-body {
+      padding: 1.35rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card-meta {
+      font-size: 0.8rem;
+      color: var(--accent-cyan);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.65rem;
+      line-height: 1.35;
+    }
+
+    .card-excerpt {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+
+    .read-more {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--accent-pink);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+      padding: 2rem 1.25rem;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--text-primary);
+    }
+
+    .disclaimer {
+      max-width: 700px;
+      margin: 0.75rem auto 0;
+      font-size: 0.8rem;
+      opacity: 0.75;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">VICE CITY INSIDER</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#articles">Weekly Guides</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div style="padding: 0 1.25rem;">
+    <section class="hero">
+      <span class="hero-badge">Updated Weekly</span>
+      <h1>Your Ultimate Guide to GTA 6 &amp; Leonida</h1>
+      <p>Deep-dive map breakdowns, hidden Easter eggs, character lore, gameplay tips, and best hardware guides published every week.</p>
+      <a href="#articles" class="btn-primary">Read Latest Articles</a>
+    </section>
+  </div>
+
+  <!-- Articles Section -->
+  <main id="articles">
+    <div class="section-header">
+      <h2>Latest Weekly Articles</h2>
+      <span style="font-size: 0.85rem; color: var(--text-secondary);">New post every week</span>
+    </div>
+
+    <div class="articles-grid">
+
+      <!-- ADD NEW WEEKLY ARTICLES AT THE TOP OF THIS GRID -->
+
+      <!-- Article 1 -->
+      <article class="card">
+        <div class="card-banner banner-1">MAP GUIDE</div>
+        <div class="card-body">
+          <div class="card-meta">Locations &bull; Week 1</div>
+          <h3 class="card-title">
+            <a href="article-1.html">GTA 6 Leonida &amp; Vice City Map Breakdown: Every Key Region Explained</a>
+          </h3>
+          <p class="card-excerpt">Explore the confirmed districts, highways, swamps, and coastal islands of Leonida and see how the map compares to previous titles.</p>
+          <a href="article-1.html" class="read-more">Read Full Guide &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Article 2 -->
+      <article class="card">
+        <div class="card-banner banner-2">CHARACTERS</div>
+        <div class="card-body">
+          <div class="card-meta">Story &amp; Lore &bull; Week 2</div>
+          <h3 class="card-title">
+            <a href="article-2.html">Lucia &amp; Jason Deep-Dive: Dual Protagonist Mechanics &amp; Trailer Secrets</a>
+          </h3>
+          <p class="card-excerpt">A closer look at GTA 6's lead duo, their dynamic partnership, and the hidden details spotted in official footage.</p>
+          <a href="article-2.html" class="read-more">Read Full Guide &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Article 3 -->
+      <article class="card">
+        <div class="card-banner banner-3">GEAR GUIDE</div>
+        <div class="card-body">
+          <div class="card-meta">Hardware &bull; Week 3</div>
+          <h3 class="card-title">
+            <a href="article-3.html">Best Consoles, Monitors &amp; Headsets to Experience GTA 6 at Its Best</a>
+          </h3>
+          <p class="card-excerpt">Planning an upgrade for Vice City? Compare the best value consoles, 4K/120Hz displays, and immersive gaming headsets.</p>
+          <a href="article-3.html" class="read-more">Read Full Guide &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; 2026 Vice City Insider. All rights reserved.</p>
+    <p class="disclaimer">Disclaimer: This is an independent fan-run gaming blog and is not affiliated with, endorsed by, or connected to Rockstar Games or Take-Two Interactive.</p>
+  </footer>
+
+</body>
+</html>
