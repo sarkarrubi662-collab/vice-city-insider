@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Vice City Insider for feedback, article suggestions, corrections, or business inquiries." />
+  <title>Contact Us — Vice City Insider</title>
+  <style>
+    :root {
+      --bg-primary: #0b0d14;
+      --bg-secondary: #131724;
+      --bg-card: #181d2e;
+      --text-primary: #f4f6fb;
+      --text-secondary: #b4bed1;
+      --accent-pink: #ff2a85;
+      --accent-cyan: #00e5ff;
+      --border-color: rgba(255, 255, 255, 0.08);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.75;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      background-color: rgba(11, 13, 20, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      background: linear-gradient(90deg, var(--accent-pink), var(--accent-cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.25rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    nav a:hover { color: var(--accent-cyan); }
+
+    .page-wrapper {
+      max-width: 800px;
+      margin: 2.5rem auto 4rem;
+      padding: 0 1.25rem;
+    }
+
+    .content-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 4vw, 2.3rem);
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    p {
+      margin-bottom: 1.15rem;
+      color: var(--text-secondary);
+    }
+
+    .contact-card {
+      background: rgba(0, 229, 255, 0.06);
+      border: 1px solid rgba(0, 229, 255, 0.25);
+      border-radius: 12px;
+      padding: 1.35rem;
+      margin: 1.5rem 0;
+    }
+
+    .contact-card h2 {
+      font-size: 1.15rem;
+      color: var(--accent-cyan);
+      margin-bottom: 0.4rem;
+    }
+
+    .email-link {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--accent-pink);
+      word-break: break-all;
+    }
+
+    .email-link:hover { text-decoration: underline; }
+
+    footer {
+      background-color: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+      padding: 2rem 1.25rem;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .disclaimer {
+      max-width: 700px;
+      margin: 0.75rem auto 0;
+      font-size: 0.8rem;
+      opacity: 0.75;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">VICE CITY INSIDER</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#articles">Weekly Guides</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-wrapper">
+    <div class="content-box">
+      <h1>Contact Us</h1>
+      <p>Have a question about one of our weekly GTA 6 guides, spotted a detail we should cover, or want to get in touch regarding partnerships? We welcome feedback from fellow gamers and readers.</p>
+
+      <div class="contact-card">
+        <h2>Direct Email</h2>
+        <p style="margin-bottom: 0.5rem;">Reach out to our editorial team anytime at:</p>
+        <a href="mailto:[rudrasarkarff999@gmail.com]" class="email-link">[rudrasarkarff999@gmail.com]</a>
+      </div>
+
+      <p><strong>Response Time:</strong> We review all messages and typically reply within 24 to 48 hours.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+    <p>&copy; 2026 Vice City Insider. All rights reserved.</p>
+    <p class="disclaimer">Disclaimer: This is an independent fan-run gaming blog and is not affiliated with, endorsed by, or connected to Rockstar Games or Take-Two Interactive.</p>
+  </footer>
+
+</body>
+</html>
